@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Create Account</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            width: 650px;
+            height: 505px;
+            display: flex;
+            background-color: white;
+        }
+
+        /* Left Side */
+        .left {
+            width: 50%;
+            background-color: #9b7abd;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 30px;
+        }
+
+        .left h1 {
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+
+        .left p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        .signin {
+            margin-top: 25px;
+            width: 155px;
+            padding: 13px;
+            border: 2px solid white;
+            border-radius: 30px;
+            background: transparent;
+            color: white;
+            font-size: 16px;
+        }
+
+        /* Right Side */
+        .right {
+            width: 50%;
+            background-color: #f8f8f8;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 30px;
+        }
+
+        .right h1 {
+            font-size: 30px;
+            margin: 0 0 10px;
+            color: #111;
+        }
+
+        .right p {
+            color: #555;
+            margin-bottom: 25px;
+        }
+
+        input {
+            width: 280px;
+            padding: 13px;
+            margin: 6px 0;
+            border: none;
+            background-color: white;
+            font-size: 15px;
+            outline: none;
+        }
+
+        .signup {
+            margin-top: 25px;
+            width: 155px;
+            padding: 13px;
+            border: 2px solid #e5e5e5;
+            border-radius: 30px;
+            background-color: transparent;
+            color: #555;
+            font-size: 16px;
+        }
+
+        /* Mobile */
+        @media (max-width: 700px) {
+            .container {
+                width: 95%;
+                height: auto;
+            }
+
+            .left,
+            .right {
+                padding: 20px;
+            }
+
+            input {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Left -->
+        <div class="left">
+            <h1>Welcome Back!</h1>
+
+            <p>
+                To keep connected with us please log in
+                <br>
+                with your personal info
+            </p>
+
+            <button class="signin">Sign In</button>
+        </div>
+
+        <!-- Right -->
+        <div class="right">
+            <h1>Create Account</h1>
+
+            <p>or use your email for Registration</p>
+
+            <input type="text" placeholder="Name">
+
+            <input type="email" placeholder="Email">
+
+            <input type="password" placeholder="Password">
+
+            <button class="signup">Sign Up</button>
+        </div>
+
+    </div>
+
+</body>
+</html>
